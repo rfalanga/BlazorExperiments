@@ -1,4 +1,14 @@
 ﻿@page "/quickgridexample"
 
+@using Microsoft.AspNetCore.Components.QuickGrid
+
+
+<PageTitle>QuickGrid Example</PageTitle>
+
 <h3>QuickGrid Example</h3>
 
+<QuickGrid Items="Family" >
+    <PropertyColumn T="Person" Property="FirstName" Title="First Name" Sortable="true" />
+    <PropertyColumn T="Person" Property="LastName" Title="Last Name" Sortable="true"  />
+    <PropertyColumn T="Person" Property="Age" Title="Age" />
+</QuickGrid>
