@@ -4,7 +4,7 @@ namespace BlazorExperiments.Client.Pages;
 
 public partial class QuickGridExample
 {
-    private IQueryable<Person> Family= new List<Person>
+    private IQueryable<Person> Family { get; set; } = new List<Person>
     {
         new Person { Id = 1, FirstName = "John", LastName = "Doe", Age = 40 },
         new Person { Id = 2, FirstName = "Jane", LastName = "Doe", Age = 39 },
