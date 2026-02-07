@@ -1,7 +1,15 @@
 ﻿@page "/quickgridexample"
+@rendermode InteractiveWebAssembly
+
+@using Microsoft.AspNetCore.Components.QuickGrid
+
+
+<PageTitle>QuickGrid Example</PageTitle>
 
 <h3>QuickGrid Example</h3>
 
-@code {
-
-}
+<QuickGrid Items="@Family">
+    <PropertyColumn Property="@(m => m.FirstName)" Title="First Name" Sortable="true" />
+    <PropertyColumn Property="@(m => m.LastName)" Title="Last Name" />
+    <PropertyColumn Property="@(m => m.Age)" Title="Age" />
+</QuickGrid>
