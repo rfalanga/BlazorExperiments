@@ -1,0 +1,13 @@
+﻿/* Apply alternating background colors */
+.quickgrid-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray for even rows */
+}
+
+.quickgrid-table tr:nth-child(odd) {
+    background-color: #ffffff; /* White for odd rows */
+}
+
+/* Optional: highlight row on hover */
+.quickgrid-table tr:hover {
+    background-color: #e6f7ff; /* Light blue on hover */
+}
