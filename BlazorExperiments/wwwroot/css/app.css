@@ -1,0 +1,12 @@
+/* Apply alternating background colors */
+.quickgrid-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.quickgrid-table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.quickgrid-table tbody tr:hover {
+    background-color: #e6f7ff;
+}
