@@ -1,0 +1,18 @@
+# Source - https://stackoverflow.com/a/75823100
+# Posted by jessehouwing
+# Retrieved 2026-08-13, License - CC BY-SA 4.0
+
+# C# files
+[*.cs]
+
+#### Core EditorConfig Options ####
+
+# Indentation and spacing
+indent_size = 4
+indent_style = space
+tab_width = 4
+
+#### .NET Coding Conventions ####
+
+# this. and Me. preferences
+dotnet_style_qualification_for_method = true
