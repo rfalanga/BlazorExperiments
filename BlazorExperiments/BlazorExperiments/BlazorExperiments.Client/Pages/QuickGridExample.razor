@@ -8,8 +8,10 @@
 
 <h3>QuickGrid Example</h3>
 
-<QuickGrid Items="@Family" Class="quickgrid-table">
-    <PropertyColumn Property="@(m => m.FirstName)" Title="First Name" Sortable="true" />
-    <PropertyColumn Property="@(m => m.LastName)" Title="Last Name" />
-    <PropertyColumn Property="@(m => m.Age)" Title="Age" />
-</QuickGrid>
+<div class="quickgrid-host">
+    <QuickGrid Items="@Family" Class="quickgrid-table">
+        <PropertyColumn Property="@(m => m.FirstName)" Title="First Name" Sortable="true" />
+        <PropertyColumn Property="@(m => m.LastName)" Title="Last Name" />
+        <PropertyColumn Property="@(m => m.Age)" Title="Age" />
+    </QuickGrid>
+</div>
